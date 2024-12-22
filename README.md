@@ -37,7 +37,7 @@
 
 3. Install the library:
    ```bash
-   pip install .
+   pip install dataLibFarah==0.0.1
    ```
 
 ## Usage
