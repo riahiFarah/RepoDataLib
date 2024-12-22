@@ -1,6 +1,6 @@
-# DataLib
+# DataLibFarah
 
-**DataLib** is a Python library designed to simplify data manipulation, analysis, and visualization. It provides tools for both basic and advanced users, enabling efficient handling of datasets, statistical computations, and machine learning tasks.
+**DataLibFarah** is a Python library designed to simplify data manipulation, analysis, and visualization. It provides tools for both basic and advanced users, enabling efficient handling of datasets, statistical computations, and machine learning tasks.
 
 ## Features
 
@@ -27,7 +27,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/riahiFarah/DataLib.git
+   git clone https://github.com/riahiFarah/RepoDataLib.git
    ```
 
 2. Navigate to the project directory:
