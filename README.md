@@ -1,6 +1,7 @@
 # DataLibFarah
 
 **DataLibFarah** is a Python library designed to simplify data manipulation, analysis, and visualization. It provides tools for both basic and advanced users, enabling efficient handling of datasets, statistical computations, and machine learning tasks.
+![image](https://github.com/user-attachments/assets/24cccd99-80b9-4ed3-b372-4799b96b3c93)
 
 ## Features
 
