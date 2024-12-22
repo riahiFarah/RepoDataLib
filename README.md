@@ -73,7 +73,7 @@ model, coef, intercept = DataLib.linear_regression(x, y)
 
 2. Run tests:
    ```bash
-   pytest tests/
+   pytest test/
    ```
 
 ## Contributing
