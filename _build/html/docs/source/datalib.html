@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>datalib package &mdash; DataLibFarah 0.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=01f34227"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            DataLibFarah
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">datalib package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-dataLibFarah.core">datalib.core module</a><ul>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib"><code class="docutils literal notranslate"><span class="pre">DataLib</span></code></a><ul>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.apply_pca"><code class="docutils literal notranslate"><span class="pre">DataLib.apply_pca()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.calculate_statistics"><code class="docutils literal notranslate"><span class="pre">DataLib.calculate_statistics()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.chi_squared_test"><code class="docutils literal notranslate"><span class="pre">DataLib.chi_squared_test()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.correlation_matrix"><code class="docutils literal notranslate"><span class="pre">DataLib.correlation_matrix()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.decision_tree_classification"><code class="docutils literal notranslate"><span class="pre">DataLib.decision_tree_classification()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.handle_missing_values"><code class="docutils literal notranslate"><span class="pre">DataLib.handle_missing_values()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.kmeans_clustering"><code class="docutils literal notranslate"><span class="pre">DataLib.kmeans_clustering()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.knn_classification"><code class="docutils literal notranslate"><span class="pre">DataLib.knn_classification()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.linear_regression"><code class="docutils literal notranslate"><span class="pre">DataLib.linear_regression()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.load_csv"><code class="docutils literal notranslate"><span class="pre">DataLib.load_csv()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.mean"><code class="docutils literal notranslate"><span class="pre">DataLib.mean()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.median"><code class="docutils literal notranslate"><span class="pre">DataLib.median()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.mode"><code class="docutils literal notranslate"><span class="pre">DataLib.mode()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.normalize_data"><code class="docutils literal notranslate"><span class="pre">DataLib.normalize_data()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.plot_data"><code class="docutils literal notranslate"><span class="pre">DataLib.plot_data()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.polynomial_regression"><code class="docutils literal notranslate"><span class="pre">DataLib.polynomial_regression()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.save_csv"><code class="docutils literal notranslate"><span class="pre">DataLib.save_csv()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.standard_deviation"><code class="docutils literal notranslate"><span class="pre">DataLib.standard_deviation()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.core.DataLib.t_test"><code class="docutils literal notranslate"><span class="pre">DataLib.t_test()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-dataLibFarah">Module contents</a><ul>
+<li><a class="reference internal" href="#dataLibFarah.DataLib"><code class="docutils literal notranslate"><span class="pre">DataLib</span></code></a><ul>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.apply_pca"><code class="docutils literal notranslate"><span class="pre">DataLib.apply_pca()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.calculate_statistics"><code class="docutils literal notranslate"><span class="pre">DataLib.calculate_statistics()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.chi_squared_test"><code class="docutils literal notranslate"><span class="pre">DataLib.chi_squared_test()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.correlation_matrix"><code class="docutils literal notranslate"><span class="pre">DataLib.correlation_matrix()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.decision_tree_classification"><code class="docutils literal notranslate"><span class="pre">DataLib.decision_tree_classification()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.handle_missing_values"><code class="docutils literal notranslate"><span class="pre">DataLib.handle_missing_values()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.kmeans_clustering"><code class="docutils literal notranslate"><span class="pre">DataLib.kmeans_clustering()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.knn_classification"><code class="docutils literal notranslate"><span class="pre">DataLib.knn_classification()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.linear_regression"><code class="docutils literal notranslate"><span class="pre">DataLib.linear_regression()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.load_csv"><code class="docutils literal notranslate"><span class="pre">DataLib.load_csv()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.mean"><code class="docutils literal notranslate"><span class="pre">DataLib.mean()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.median"><code class="docutils literal notranslate"><span class="pre">DataLib.median()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.mode"><code class="docutils literal notranslate"><span class="pre">DataLib.mode()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.normalize_data"><code class="docutils literal notranslate"><span class="pre">DataLib.normalize_data()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.plot_data"><code class="docutils literal notranslate"><span class="pre">DataLib.plot_data()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.polynomial_regression"><code class="docutils literal notranslate"><span class="pre">DataLib.polynomial_regression()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.save_csv"><code class="docutils literal notranslate"><span class="pre">DataLib.save_csv()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.standard_deviation"><code class="docutils literal notranslate"><span class="pre">DataLib.standard_deviation()</span></code></a></li>
+<li><a class="reference internal" href="#dataLibFarah.DataLib.t_test"><code class="docutils literal notranslate"><span class="pre">DataLib.t_test()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">DataLibFarah</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">datalib package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/docs/source/dataLib.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="datalib-package">
+<h1>datalib package<a class="headerlink" href="#datalib-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-dataLibFarah.core">
+<span id="datalib-core-module"></span><h2>datalib.core module<a class="headerlink" href="#module-dataLibFarah.core" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dataLibFarah.core.</span></span><span class="sig-name descname"><span class="pre">DataLib</span></span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A library for data manipulation, analysis, and visualization.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.apply_pca">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">apply_pca</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.apply_pca"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.apply_pca" title="Link to this definition"></a></dt>
+<dd><p>Perform Principal Component Analysis (PCA) on the data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.calculate_statistics">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_statistics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.calculate_statistics"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.calculate_statistics" title="Link to this definition"></a></dt>
+<dd><p>Calculate basic statistics for numerical columns.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.chi_squared_test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">chi_squared_test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.chi_squared_test"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.chi_squared_test" title="Link to this definition"></a></dt>
+<dd><p>Perform a chi-squared test.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.correlation_matrix">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">correlation_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.correlation_matrix"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.correlation_matrix" title="Link to this definition"></a></dt>
+<dd><p>Generate and plot a correlation matrix.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.decision_tree_classification">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">decision_tree_classification</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.decision_tree_classification"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.decision_tree_classification" title="Link to this definition"></a></dt>
+<dd><p>Perform Decision Tree classification.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.handle_missing_values">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">handle_missing_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.handle_missing_values"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.handle_missing_values" title="Link to this definition"></a></dt>
+<dd><p>Handle missing values in a DataFrame by a specified method.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.kmeans_clustering">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">kmeans_clustering</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_clusters</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.kmeans_clustering"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.kmeans_clustering" title="Link to this definition"></a></dt>
+<dd><p>Apply k-means clustering to the data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.knn_classification">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">knn_classification</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.knn_classification"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.knn_classification" title="Link to this definition"></a></dt>
+<dd><p>Perform k-NN classification.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.linear_regression">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">linear_regression</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.linear_regression"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.linear_regression" title="Link to this definition"></a></dt>
+<dd><p>Perform linear regression and return the model and coefficients.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.load_csv">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">load_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.load_csv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.load_csv" title="Link to this definition"></a></dt>
+<dd><p>Load a CSV file into a DataFrame.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.mean">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.mean"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.mean" title="Link to this definition"></a></dt>
+<dd><p>Calculate the mean of a numerical dataset.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.median">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">median</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.median"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.median" title="Link to this definition"></a></dt>
+<dd><p>Calculate the median of a numerical dataset.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.mode">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.mode" title="Link to this definition"></a></dt>
+<dd><p>Calculate the mode of a numerical dataset.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.normalize_data">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">normalize_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.normalize_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.normalize_data" title="Link to this definition"></a></dt>
+<dd><p>Normalize numerical columns in a DataFrame.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.plot_data">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">plot_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'scatter'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.plot_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.plot_data" title="Link to this definition"></a></dt>
+<dd><p>Generate a plot of data from two columns.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.polynomial_regression">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">polynomial_regression</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.polynomial_regression"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.polynomial_regression" title="Link to this definition"></a></dt>
+<dd><p>Perform polynomial regression and return the model and coefficients.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.save_csv">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">save_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.save_csv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.save_csv" title="Link to this definition"></a></dt>
+<dd><p>Save a DataFrame to a CSV file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.standard_deviation">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">standard_deviation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.standard_deviation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.standard_deviation" title="Link to this definition"></a></dt>
+<dd><p>Calculate the standard deviation of a numerical dataset.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.core.DataLib.t_test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">t_test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sample1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.t_test"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.core.DataLib.t_test" title="Link to this definition"></a></dt>
+<dd><p>Perform an independent T-test between two samples.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-dataLibFarah">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-dataLibFarah" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dataLibFarah.</span></span><span class="sig-name descname"><span class="pre">DataLib</span></span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A library for data manipulation, analysis, and visualization.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.apply_pca">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">apply_pca</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.apply_pca"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.apply_pca" title="Link to this definition"></a></dt>
+<dd><p>Perform Principal Component Analysis (PCA) on the data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.calculate_statistics">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_statistics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.calculate_statistics"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.calculate_statistics" title="Link to this definition"></a></dt>
+<dd><p>Calculate basic statistics for numerical columns.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.chi_squared_test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">chi_squared_test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.chi_squared_test"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.chi_squared_test" title="Link to this definition"></a></dt>
+<dd><p>Perform a chi-squared test.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.correlation_matrix">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">correlation_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.correlation_matrix"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.correlation_matrix" title="Link to this definition"></a></dt>
+<dd><p>Generate and plot a correlation matrix.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.decision_tree_classification">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">decision_tree_classification</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.decision_tree_classification"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.decision_tree_classification" title="Link to this definition"></a></dt>
+<dd><p>Perform Decision Tree classification.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.handle_missing_values">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">handle_missing_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.handle_missing_values"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.handle_missing_values" title="Link to this definition"></a></dt>
+<dd><p>Handle missing values in a DataFrame by a specified method.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.kmeans_clustering">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">kmeans_clustering</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_clusters</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.kmeans_clustering"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.kmeans_clustering" title="Link to this definition"></a></dt>
+<dd><p>Apply k-means clustering to the data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.knn_classification">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">knn_classification</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.knn_classification"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.knn_classification" title="Link to this definition"></a></dt>
+<dd><p>Perform k-NN classification.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.linear_regression">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">linear_regression</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.linear_regression"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.linear_regression" title="Link to this definition"></a></dt>
+<dd><p>Perform linear regression and return the model and coefficients.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.load_csv">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">load_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.load_csv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.load_csv" title="Link to this definition"></a></dt>
+<dd><p>Load a CSV file into a DataFrame.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.mean">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.mean"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.mean" title="Link to this definition"></a></dt>
+<dd><p>Calculate the mean of a numerical dataset.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.median">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">median</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.median"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.median" title="Link to this definition"></a></dt>
+<dd><p>Calculate the median of a numerical dataset.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.mode">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.mode" title="Link to this definition"></a></dt>
+<dd><p>Calculate the mode of a numerical dataset.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.normalize_data">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">normalize_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.normalize_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.normalize_data" title="Link to this definition"></a></dt>
+<dd><p>Normalize numerical columns in a DataFrame.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.plot_data">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">plot_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'scatter'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.plot_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.plot_data" title="Link to this definition"></a></dt>
+<dd><p>Generate a plot of data from two columns.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.polynomial_regression">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">polynomial_regression</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.polynomial_regression"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.polynomial_regression" title="Link to this definition"></a></dt>
+<dd><p>Perform polynomial regression and return the model and coefficients.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.save_csv">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">save_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.save_csv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.save_csv" title="Link to this definition"></a></dt>
+<dd><p>Save a DataFrame to a CSV file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.standard_deviation">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">standard_deviation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.standard_deviation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.standard_deviation" title="Link to this definition"></a></dt>
+<dd><p>Calculate the standard deviation of a numerical dataset.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataLibFarah.DataLib.t_test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">t_test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sample1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/dataLibFarah/core.html#DataLib.t_test"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dataLibFarah.DataLib.t_test" title="Link to this definition"></a></dt>
+<dd><p>Perform an independent T-test between two samples.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Farah Riahi.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
